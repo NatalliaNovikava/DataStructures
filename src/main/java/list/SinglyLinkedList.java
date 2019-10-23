@@ -59,7 +59,7 @@ public class SinglyLinkedList {
     }
 
     /**
-     * Removes and return the node at the head
+     * Removes and returns the node at the head
      * @return node removed at the head
      */
     public Node removeFirst() {
@@ -73,7 +73,7 @@ public class SinglyLinkedList {
     }
 
     /**
-     * Removes and return the node at the tail
+     * Removes and returns the node at the tail
      * @return node removed at the tail
      */
     public Node removeLast() {
@@ -82,7 +82,7 @@ public class SinglyLinkedList {
             Node node = tail;
             Node previousToTail = head;
             while (previousToTail.next != tail) {
-                previousToTail = currpreviousToTailent.next;
+                previousToTail = previousToTail.next;
             }
             previousToTail.next = null;
             tail = previousToTail;
